@@ -1,0 +1,280 @@
+/* rubik-regular - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v12-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v12-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v12-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v12-latin_cyrillic-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v12-latin_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v12-latin_cyrillic-regular.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+/* rubik-700 - latin_cyrillic */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik-v12-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v12-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v12-latin_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/rubik-v12-latin_cyrillic-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v12-latin_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/rubik-v12-latin_cyrillic-700.svg#Rubik") format("svg"); /* Legacy iOS */
+}
+
+/* arizonia-regular - latin */
+@font-face {
+  font-family: "Arizonia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/arizonia-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/arizonia-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/arizonia-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/arizonia-v11-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/arizonia-v11-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/arizonia-v11-latin-regular.svg#Arizonia") format("svg"); /* Legacy iOS */
+}
+
+:root {
+  /* переменные */
+  --orange: #ffe9ce;
+  --text-color: #8b4512;
+  --text-logo: #da3c27;
+  /* 
+  --accent: #2196f3;
+  --black: #000000;
+  --gray: #757575;
+  --white: #ffffff;
+  ;
+  --bg-box: #2f303a;
+  --h-color: #212121;
+  --bg-btn: #f5f4fa;
+  --cl-icon: #afb1b8;
+  --bg-icon: rgba(255, 255, 255, 0.1);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 250ms; */
+}
+
+/*чтобы сбросить отсутпы, которые браузер применяет по умолчанию */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*чтобы контент не растягивал контейнер */
+}
+body {
+  background-color: #f5f7fa;
+  padding-left: 20px; /*отступ */
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  font-family: Rubik;
+}
+.wrapper {
+  background: #ffffff;
+  display: flex; /*второй контейнер справа */
+  max-width: 1800px; /*чтобы не ограничивать */
+  margin: 0 auto; /*центрировать */
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  background: #ffe9ce;
+  width: 290px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.menu-left {
+  margin-left: 25px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+.menu-left-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+  list-style: none;
+}
+.menu-left-item-text {
+  color: #8b4512;
+}
+
+.container-logo {
+  /*отступы */
+  font-family: Arizonia;
+  color: var(--text-logo);
+  letter-spacing: 0.075em;
+  font-size: 144px;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #ffe0bd;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  text-align: center;
+  background-image: url(../img/flowers.svg);
+}
+
+/* *************************** */
+.about-me-container {
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.contacts-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-link {
+  color: #7f868f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact-link-tipe {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 10px; /*отступ */
+}
+.tech-skill-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px; /*отступ */
+  color: #ffffff;
+}
+
+.soft-skills-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 55px;
+}
+.soft-skill-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px; /*отступ */
+  color: #ffffff;
+}
+.profession {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+.name {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 460px;
+  margin-top: 10px;
+}
+.info-container {
+  margin-bottom: 65px; /*отступ второго блока от первого*/
+}
+.about-me-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.projects-link {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tech-name {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.dots {
+  color: #595959;
+  font-size: 10px;
+  font-weight: 100px;
+}
+.project-item {
+  font-weight: 700;
+  margin-left: 17px;
+}
+.projects-container {
+  margin-bottom: 55px; /*отступ третьего  блока "Work Experience"от второго*/
+}
+.profession-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.profession-company {
+  color: #ff6b08;
+}
+.profession-time {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.profession-divider {
+  color: #000;
+}
+.profession-duties {
+  margin-bottom: 30px;
+}
+.profession-duties-item {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 16px;
+}
+.university {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+}
+.speсialty {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
