@@ -83,7 +83,7 @@
 body {
   /* background-color: #f5f7fa; */
   padding-left: 20px; /*отступ */
-  padding-top: 40px;
+  padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
   font-family: Rubik;
@@ -91,7 +91,7 @@ body {
 .wrapper {
   background: white;
   display: flex; /*второй контейнер справа */
-  max-width: 1800px; /*чтобы не ограничивать */
+  max-width: 1400px; /*чтобы не ограничивать */
   margin: 0 auto; /*центрировать */
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .contacts-left {
-  height: 340px;
+  height: 180px;
   background-image: url(../img/flowers.svg);
   background-repeat: no-repeat;
 }
@@ -145,7 +145,7 @@ body {
 .join {
   margin-left: 15px;
   margin-right: 15px;
-  padding-top: 105%;
+  padding-top: 50%;
 }
 .container-join {
   display: flex;
